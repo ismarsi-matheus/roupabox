@@ -34,7 +34,8 @@ namespace roupabox
                     Sair();
                     break;
                 case 1:
-                    CadastroClientes();
+                    cliente varCli = new clientes();
+                    varCli.cadClientes();
                     break;
                 case 2:
                     ListarClientes();
@@ -53,52 +54,6 @@ namespace roupabox
                     break;
             }
         }
-
-        // Métodos para cada opção do menu
-        public void CadastroClientes()
-        {
-            Console.Clear();
-            Console.WriteLine("Cadastro de Clientes");
-            Console.WriteLine("Funcionalidade em desenvolvimento...");
-            Console.WriteLine("\nPressione qualquer tecla para voltar ao menu principal...");
-            Console.ReadKey();
-            Console.Clear();
-            ExibirOpcoesMenu();
-        }
-
-        public void ListarClientes()
-        {
-            Console.Clear();
-            Console.WriteLine("Listar Clientes");
-            Console.WriteLine("Funcionalidade em desenvolvimento...");
-            Console.WriteLine("\nPressione qualquer tecla para voltar ao menu principal...");
-            Console.ReadKey();
-            Console.Clear();
-            ExibirOpcoesMenu();
-        }
-
-        public void CadastroDeProdutos()
-        {
-            Console.Clear();
-            Console.WriteLine("Cadastro de Produtos");
-            Console.WriteLine("Funcionalidade em desenvolvimento...");
-            Console.WriteLine("\nPressione qualquer tecla para voltar ao menu principal...");
-            Console.ReadKey();
-            Console.Clear();
-            ExibirOpcoesMenu();
-        }
-
-        public void ListarProduto()
-        {
-            Console.Clear();
-            Console.WriteLine("Listar Produtos");
-            Console.WriteLine("Funcionalidade em desenvolvimento...");
-            Console.WriteLine("\nPressione qualquer tecla para voltar ao menu principal...");
-            Console.ReadKey();
-            Console.Clear();
-            ExibirOpcoesMenu();
-        }
-
         // Método para sair do programa
         public void Sair()
         {
