@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="cabecalho.cs" />
+    <Compile Include="cliente.cs" />
     <Compile Include="menu.cs" />
+    <Compile Include="produto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

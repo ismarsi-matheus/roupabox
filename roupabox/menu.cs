@@ -24,6 +24,7 @@ namespace roupabox
                 Thread.Sleep(2000);
                 Console.Clear();
                 ExibirOpcoesMenu();
+                Console.ResetColor();
                 return;
             }
 
@@ -34,22 +35,24 @@ namespace roupabox
                     Sair();
                     break;
                 case 1:
-                    cliente varCli = new clientes();
-                    varCli.cadClientes();
+                    Clientes varCli = new Clientes();
+                    varCli.cadCliente();
+
                     break;
                 case 2:
-                    ListarClientes();
                     break;
                 case 3:
-                    CadastroDeProdutos();
+                    produto varPro = new produto();
+                    varPro.cadProduto();
                     break;
                 case 4:
-                    ListarProduto();
+                    
                     break;
                 default:
                     Console.WriteLine("\nOpção inválida! Tente novamente.");
                     Thread.Sleep(2000);
                     Console.Clear();
+
                     ExibirOpcoesMenu();
                     break;
             }
