@@ -1,75 +1,57 @@
 ﻿using System;
-using System.Threading;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace roupabox
+namespace Roupabox
 {
-    internal class Menu
+    internal class ExibirMenu
     {
-        
-        // Método para exibir as opções do menu
-        public void ExibirOpcoesMenu()
+        public void Menu(Produtos varPro)
         {
-            Console.WriteLine("\nMenu de Opções:");
-            Console.WriteLine("0 - Sair");
-            Console.WriteLine("1 - Cadastro de Clientes");
-            Console.WriteLine("2 - Listar Clientes");
-            Console.WriteLine("3 - Cadastro de Produtos");
-            Console.WriteLine("4 - Listar Produtos");
-            Console.Write("\nDigite a opção escolhida: ");
-
-            // Tratamento de entrada inválida
-            if (!int.TryParse(Console.ReadLine(), out int opcaoEscolhida))
+            List<ProdutoCad> listaP = new List<ProdutoCad>();
+            while (true)
             {
-                Console.WriteLine("Opção inválida! Tente novamente.");
-                Thread.Sleep(2000);
-                Console.Clear();
-                ExibirOpcoesMenu();
-                Console.ResetColor();
-                return;
+                Console.WriteLine("\nDigite 0 para sair");
+                Console.WriteLine("\nDigite 1 para cadastro de clientes");
+                Console.WriteLine("\nDigite 2 para listar clientes");
+                Console.WriteLine("\nDigite 3 para cadastro de produtos");
+                Console.WriteLine("\nDigite 4 para listar produtos");
+                Console.WriteLine();
+                Console.WriteLine("Digite a opção escolhida");
+                int opcoes_menu = int.Parse(Console.ReadLine());
+
+                switch (opcoes_menu)
+                {
+                    case 0:
+
+                        Console.WriteLine("");
+                        break;
+
+                    case 1:
+
+
+                        //varCli.cadCliente();
+                        break;
+
+                    case 2:
+
+                        Console.WriteLine("");
+                        break;
+
+                    case 3:
+
+
+                        varPro.cadProduto();
+                        break;
+
+                    case 4:
+
+                        Console.WriteLine("");
+                        break;
+                }
             }
-
-            // Navegação pelo menu
-            switch (opcaoEscolhida)
-            {
-                case 0:
-                    Sair();
-                    break;
-                case 1:
-                    Clientes varCli = new Clientes();
-                    varCli.cadCliente();
-
-                    break;
-                case 2:
-                    break;
-                case 3:
-                    produto varPro = new produto();
-                    varPro.cadProduto();
-                    break;
-                case 4:
-                    
-                    break;
-                default:
-                    Console.WriteLine("\nOpção inválida! Tente novamente.");
-                    Thread.Sleep(2000);
-                    Console.Clear();
-
-                    ExibirOpcoesMenu();
-                    break;
-            }
-        }
-        // Método para sair do programa
-        public void Sair()
-        {
-            Console.Clear();
-            Console.WriteLine("Encerrando o programa...");
-            Console.WriteLine(@"
-░██████╗░█████╗░██╗███╗░░██╗██████╗░░█████╗░
-██╔════╝██╔══██╗██║████╗░██║██╔══██╗██╔══██╗
-╚█████╗░███████║██║██╔██╗██║██║░░██║██║░░██║
-░╚═══██╗██╔══██║██║██║╚████║██║░░██║██║░░██║
-██████╔╝██║░░██║██║██║░╚███║██████╔╝╚█████╔╝
-╚═════╝░╚═╝░░╚═╝╚═╝╚═╝░░╚══╝╚═════╝░░╚════╝");
-            Thread.Sleep(3000);
         }
     }
 }

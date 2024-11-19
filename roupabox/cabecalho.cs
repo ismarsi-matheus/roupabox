@@ -6,14 +6,20 @@ using System.Threading.Tasks;
 
 namespace roupabox
 {
-    internal class cabecalho
+    internal class Cabec
     {
-        public void exibir_cabecalho()
+        public void Cabecalho()
         {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("==========================================");
+            Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(@"⁼⁼⁼⁼⁼⁼⁼⁼⁼⁼");
-            Console.WriteLine("Autor:Matheus Ismarsi");
-            Console.WriteLine(@"⁼⁼⁼⁼⁼⁼⁼⁼⁼⁼");
+            Console.WriteLine("Autor: Matheus ismarsi");
+            Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("==========================================");
+
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine(@"
 ██████╗░░█████╗░██╗░░░██╗██████╗░░█████╗░██████╗░░█████╗░██╗░░██╗
 ██╔══██╗██╔══██╗██║░░░██║██╔══██╗██╔══██╗██╔══██╗██╔══██╗╚██╗██╔╝
@@ -21,16 +27,11 @@ namespace roupabox
 ██╔══██╗██║░░██║██║░░░██║██╔═══╝░██╔══██║██╔══██╗██║░░██║░██╔██╗░
 ██║░░██║╚█████╔╝╚██████╔╝██║░░░░░██║░░██║██████╦╝╚█████╔╝██╔╝╚██╗
 ╚═╝░░╚═╝░╚════╝░░╚═════╝░╚═╝░░░░░╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝░░╚═╝");
-            Console.WriteLine(@"⁼⁼⁼⁼⁼⁼⁼⁼⁼⁼");
-
-
-
-
+            Console.ResetColor();
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("==============================");
+            Console.ResetColor();
         }
-
-
-
-
-
     }
 }
