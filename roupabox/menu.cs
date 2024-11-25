@@ -12,7 +12,7 @@ namespace roupaboxx
 
         public void Menu(Produtos varPro, Cliente varCli)
         {
-            List<ProdutoCad> litsaP = new List<ProdutoCad>();
+            List<ProdutoCad> lista = new List<ProdutoCad>();
             while (true)
             {
                 Console.WriteLine("Digite 0 para Sair");
@@ -35,6 +35,7 @@ namespace roupaboxx
                         varPro.cadProduto();
                         break;
                     case 4:
+                        varPro.ListarProduto();
                         break;
                 }
             }

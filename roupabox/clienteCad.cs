@@ -4,27 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace roupaboxx
+namespace Roupabox
 {
     internal class ClienteCad
     {
-        public string nomeCli { get; set; }// Nome   --  string   --  nomeCli  - Somente Textos
-        public long cpfCli { get; set; }// CPF   --  long  --  cpfCli    --   11 dígitos
-        public long telCli { get; set; }// Telefone   --  long -- telCli   -- 11 dígitos
-        public int idadeCli { get; set; }// Idade   --  int  --  idadeCli   Somente Numeros
-        public string mailCli { get; set; }// E-mail  --  string   --  mailCli   -- @
-        public string sexoCli { get; set; }// Sexo  --  string   --  sexoCli  - Somente Textos
-        public string ruaCli { get; set; }// Rua  --  string   --  ruaCli 
-        public string compCli { get; set; }// complemento --  string   --  compCli
-        public int numCli { get; set; }// Numero  --  int  --  numCli
-        public string bairroCli { get; set; }// Bairro  --  string   -- bairroCli
-        public string cidCli { get; set; }// Cidade --  string   -- cidCli
-        public string estCli { get; set; }// Estado --  string   -- estCli  -- ser somente 2 dígitos
-        public int cepCli { get; set; }// CEP --  int  -- cepCli -- 8 dígitos 
-
-
-
-
-
+        public ClienteCad(string Cli)
+        {
+            nomeCli = Cli;
+        }
+        public string cpfCli { get; set; }
+        public string nomeCli { get; set; }
+        public string telCli { get; set; }
+        public int idaCli { get; set; }
+        public string mailCli { get; set; }
+        public string sexCli { get; set; }
+        public string ruaCli { get; set; }
+        public string compleCli { get; set; }
+        public int numCli { get; set; }
+        public string estaCli { get; set; }
+        public string cepCli { get; set; }
     }
 }
