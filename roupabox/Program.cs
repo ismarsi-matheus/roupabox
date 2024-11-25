@@ -1,26 +1,24 @@
-﻿sing roupabox;
+﻿using Roupabox;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
- 
-namespace Roupabox
+
+namespace roupaboxx
 {
-    public class program
+    internal class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            Cabec variavelCabecalho = new Cabec();
-            variavelCabecalho.Cabecalho();
+            cabec variavelCabecalho = new cabec();
+            variavelCabecalho.cabecalho();
 
             Produtos varPro = new Produtos();
-            Clientes varCli = new Clientes();
+            Cliente VarCli = new Cliente();
 
-
-            ExibirMenu variavelMenu = new ExibirMenu();
-            variavelMenu.Menu(varPro);
+            ExibirMenu VariavelMenu = new ExibirMenu();
+            VariavelMenu.Menu(varPro, VarCli);
 
         }
     }
-}

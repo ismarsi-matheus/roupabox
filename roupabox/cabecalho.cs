@@ -4,21 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace roupabox
+namespace roupaboxx
 {
-    internal class Cabec
+    public class cabec
     {
-        public void Cabecalho()
+        public void cabecalho()
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("==========================================");
+            Console.WriteLine("════════════════════════════════════");
             Console.ResetColor();
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Autor: Matheus ismarsi");
-            Console.ResetColor();
+            Console.WriteLine("Atividade de Matheus Ismarsi");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("==========================================");
-
+            Console.WriteLine("════════════════════════════════════");
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine(@"
 ██████╗░░█████╗░██╗░░░██╗██████╗░░█████╗░██████╗░░█████╗░██╗░░██╗
@@ -27,10 +24,8 @@ namespace roupabox
 ██╔══██╗██║░░██║██║░░░██║██╔═══╝░██╔══██║██╔══██╗██║░░██║░██╔██╗░
 ██║░░██║╚█████╔╝╚██████╔╝██║░░░░░██║░░██║██████╦╝╚█████╔╝██╔╝╚██╗
 ╚═╝░░╚═╝░╚════╝░░╚═════╝░╚═╝░░░░░╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝░░╚═╝");
-            Console.ResetColor();
-            Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("==============================");
+            Console.WriteLine("════════════════════════════════════");
             Console.ResetColor();
         }
     }

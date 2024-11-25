@@ -1,54 +1,40 @@
-﻿using System;
+﻿using Roupabox;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Roupabox
+namespace roupaboxx
 {
     internal class ExibirMenu
     {
-        public void Menu(Produtos varPro)
+
+        public void Menu(Produtos varPro, Cliente varCli)
         {
-            List<ProdutoCad> listaP = new List<ProdutoCad>();
+            List<ProdutoCad> litsaP = new List<ProdutoCad>();
             while (true)
             {
-                Console.WriteLine("\nDigite 0 para sair");
-                Console.WriteLine("\nDigite 1 para cadastro de clientes");
-                Console.WriteLine("\nDigite 2 para listar clientes");
-                Console.WriteLine("\nDigite 3 para cadastro de produtos");
-                Console.WriteLine("\nDigite 4 para listar produtos");
-                Console.WriteLine();
-                Console.WriteLine("Digite a opção escolhida");
-                int opcoes_menu = int.Parse(Console.ReadLine());
+                Console.WriteLine("Digite 0 para Sair");
+                Console.WriteLine("Digite 1 Cadastro de Clientes");
+                Console.WriteLine("Digite 2 Listar Clientes");
+                Console.WriteLine("Digite 3 Cadastro de Produtos");
+                Console.WriteLine("Digite 4 Listar Produtos");
+                int numero = int.Parse(Console.ReadLine());
 
-                switch (opcoes_menu)
+                switch (numero)
                 {
-                    case 0:
-
-                        Console.WriteLine("");
-                        break;
-
                     case 1:
 
-
-                        //varCli.cadCliente();
+                        varCli.cadCliente();
                         break;
-
                     case 2:
-
-                        Console.WriteLine("");
                         break;
-
                     case 3:
-
 
                         varPro.cadProduto();
                         break;
-
                     case 4:
-
-                        Console.WriteLine("");
                         break;
                 }
             }
